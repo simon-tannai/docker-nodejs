@@ -1,14 +1,16 @@
-# Build the images
+# Simple Docker image with Node.js
+
+## Build image
 docker build -t nodejs .
 
-# List images
+## List images
 docker images
 
-# Create a container
+## Create a container
 docker run -it --name "testnodejs" nodejs
 
-# List all containers
+## List all containers
 docker ps --all
 
-# Start stopped container
+## Start stopped container
 docker start 1527affd604c
