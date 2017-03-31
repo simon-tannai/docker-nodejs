@@ -7,10 +7,10 @@
 `docker images`
 
 ## Create a container
-`docker run -it --name "testnodejs" nodejs`
+`docker run -it --name "nodejsboilerplate" nodejs`
 
 ### Create a container with a shared volume
-`docker run --name "testnodejs" -it -p 3000:8080 -v /PATH/IN/HOST:/PATH/IN/CONTAINER nodejs`
+`docker run --name "nodejsboilerplate" -it -p 3000:8080 -v /PATH/IN/HOST:/WORK nodejs`
 
 ## List all containers
 `docker ps --all`
