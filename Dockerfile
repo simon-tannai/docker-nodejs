@@ -6,8 +6,20 @@ RUN \
   # Update packages
   apt-get -y update && apt-get upgrade -y && \
 
-  # Install wget, xz-utils (to uncompress) and git
-  apt-get install wget xz-utils git -y && \
+  # Install wget, xz-utils (to uncompress), git and essentials packages
+  apt-get install -y  wget \
+                      xz-utils \
+                      git \
+                      make \
+                      automake \
+                      gcc \
+                      build-essential \
+                      g++ \
+                      cpp \
+                      libc6-dev \
+                      man-db \
+                      autoconf \
+                      pkg-config && \
 
   # Create nodejs folder
   mkdir /nodejs && \
